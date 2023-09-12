@@ -4,5 +4,7 @@ FROM ubuntu:jammy
 WORKDIR /app
 
 RUN apt-get update -y && \ 
-    apt-get install -y build-essential && \
-    apt-get install -y libsocket++-dev
+    apt-get install -y \ 
+    build-essential \
+    libsocket++-dev \
+    dos2unix
